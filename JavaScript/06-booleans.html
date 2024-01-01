@@ -59,6 +59,13 @@ console.log('text'/5); // outputs NAN-not a number
   //And Operator
   false && console.log('hello');
 
+  //OR operator, ||
+  const currency = 'EUR' || 'USD'; //creates a default value of USD if nothing is chosen i.e EUR is chosen since its truthy
+  console.log(currency);
+
+  const currency2 = undefined || 'USD'; //creates a default value of USD if nothing is chosen i.e USD is picked becaue the 1st value is undefined
+  console.log(currency);
+
 
    </script>
   </body>
