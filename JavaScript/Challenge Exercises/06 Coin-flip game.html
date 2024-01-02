@@ -19,7 +19,18 @@
         qn.6g
             Create an if-statement and check:
                 * if the number is less than 0.5, then display 'heads' in the console.
-                * Else display 'tails' in the console.    
+                * Else display 'tails' in the console.   
+                * 
+        
+        qn.6h
+            Instead of displaying 'heads' or 'tails' in the console, save the result in a variable called 'result'.
+
+
+        qn.6i
+            Let's say we're trying to guess the result. Craete a variable called
+            'guess' and save your guess('heads' or 'tails').
+                * If your guess matches the result, display 'You win!' in the console
+                * If your guess does not match the result, display 'You lose!'
         */
 
 
@@ -28,10 +39,12 @@
        let result = '';
        const guess = 'heads';
 
-       if (num < 0.5 ) {
+       if (num < 0.5 && result === guess ) {
          result ='heads';
+         console.log('You win!')
        }else {
         result = 'tails';
+        console.log('You lose!')
        }
 
 
