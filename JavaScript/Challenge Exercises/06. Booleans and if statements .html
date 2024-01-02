@@ -43,7 +43,7 @@
 
          
 
-        
+
         /* qn. 6d
         imagine an amusement park that has a discount for children(6 yrs and younger) and seniors(65 yrs and older).
         * Create a variable 'age' and save a person's age inside.
@@ -65,8 +65,9 @@
         
                */
             const age = 22;
+            const isHoliday = false;
 
-            if (age <= 6 || age >= 65) {
+            if ( (age <= 6 || age >= 65) && !isHoliday) {
                 console.log('Discount!')
             } else  {
                 console.log('No Discount!');
