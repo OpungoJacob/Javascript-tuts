@@ -41,10 +41,14 @@
 
        if (num < 0.5 && result === guess ) {
          result ='heads';
-         console.log('You win!')
+         
        }else {
         result = 'tails';
         console.log('You lose!')
+       }
+
+       if (result === guess) {
+        console.log('You win!');
        }
 
 
