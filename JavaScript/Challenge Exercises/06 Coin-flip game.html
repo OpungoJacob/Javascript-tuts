@@ -31,27 +31,40 @@
             'guess' and save your guess('heads' or 'tails').
                 * If your guess matches the result, display 'You win!' in the console
                 * If your guess does not match the result, display 'You lose!'
+                * 
+        
+        qn.6j.
+            (Challenge) instead of using if-statements in the previous exercises, try switching them into ternary operators (condition ? A:B).
         */
 
 
-       const num = Math.random();
-       console.log(num);
-       let result = '';
-       const guess = 'heads';
+    //    const num = Math.random();
+    //    console.log(num);
+    //    let result = '';
+    //    const guess = 'heads';
 
-       if (num < 0.5 ) {
-         result ='heads';
+    //    if (num < 0.5 ) {
+    //      result ='heads';
          
-       }else {
-        result = 'tails';
+    //    }else {
+    //     result = 'tails';
         
-       }
+    //    }
 
-       if (result === guess) {
-        console.log('You win!');
-       }else {
-        console.log('You lose!');
-       }
+    //    if (result === guess) {
+    //     console.log('You win!');
+    //    }else {
+    //     console.log('You lose!');
+    //    }
+
+    const num = Math.random();
+console.log(num);
+
+const result = num < 0.5 ? 'heads' : 'tails';
+const guess = 'heads';
+
+const message = result === guess ? 'You win!' : 'You lose!';
+console.log(message);
 
 
     </script>
