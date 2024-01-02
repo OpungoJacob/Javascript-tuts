@@ -9,16 +9,39 @@
 
     <script>
 
-        const hour = new Date().getHours();
+        /*qn 6a.
+        Create a variable called 'hour' and save the current hour of the day (use 24-hour format and save it as a number between 0 and 23).
+            * if hour is between 6 and 12, display 'Good morning!' in the console.
+            * if hour is between 13 and 17, display 'Good afternoon!' in the console
+            * Otherwise, display 'Good night!' in the console. 
+
+        */
+
+        /* qn. 6b
+         continue from the previous question, try changing the value in the 'hour' variable to make it display different messages */
+
+         /* qn. 6c
+            Continuing from 6a, create a variable called 'name' and save your
+            name inside (as a string). update the if-statement to display your name in each message.
+            for example: 'Good morning ${name}'
+         */
+
+
+
+
+        // const hour = new Date().getHours();\
+        const hour = 8;
+        const name = 'Opungo Jacob';
 
         if (hour >= 6 && hour <= 12) {
-            console.log('Good morning!');
+            console.log(`Good morning! ${name}`);
         } else if (hour >= 13 && hour <= 17) {
             console.log('Good afternoon!');
         } else {
             console.log('Good night!');
         }
 
+        
 
     </script>
     
