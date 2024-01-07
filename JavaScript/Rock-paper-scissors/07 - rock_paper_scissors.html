@@ -64,14 +64,23 @@
 
     <button 
     onclick="
-         const computerMove = pickComputerMove(); 
+        playGame('scissors');
+        "
+    >Scissors</button>
 
-        
+    <script>
 
-          // using another if statement to compare what the user selected with what the computer randomly selected
+      function playGame (playerMove ) {
 
-          let result ='';
+                const computerMove = pickComputerMove(); 
 
+                
+
+        // using another if statement to compare what the user selected with what the computer randomly selected
+
+        let result ='';
+
+        if(playerMove === 'scissors'){
           if (computerMove === 'rock') {
             result = 'You lose.';
           } 
@@ -81,13 +90,12 @@
           else if (computerMove === 'scissors') {
             result = 'Tie.'
           }
+        }
 
           // Below is an alert. It displays the output at the end of a game
-          alert(`You picked scissors. computer picked ${computerMove}. ${result}`);
-        "
-    >Scissors</button>
+        alert(`You picked ${playerMove}. computer picked ${computerMove}. ${result}`);
 
-    <script>
+      }
       
 
         function pickComputerMove() {
