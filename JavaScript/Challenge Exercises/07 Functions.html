@@ -20,14 +20,18 @@
          
          7c. tTry calling greet() without a name (it will display 'Hello undefined!').
              Modify the function so that if 'name' is undefined, it will display
-             'Hi there!' instead    
+             'Hi there!' instead .
+             
+             (Hint: use an if-statement. Since undefined is a falsy value, you
+             can use: if (!name){...} to check if 'name is undefined')
 
         */
-        function greet (name) {
+        function greet (name = 'Hi there!') {
                 console.log(`Hello ${name}!`);
         }
         greet('Jacob');
         greet('Simon');
+        greet();
     </script>
 
 </body>
