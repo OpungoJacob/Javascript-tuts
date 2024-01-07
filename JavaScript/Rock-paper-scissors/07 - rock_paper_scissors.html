@@ -9,45 +9,14 @@
     <p>Rock Paper Scissors</p>
     <button
       onclick="
-         const computerMove =   pickComputerMove();
-
-   
-
-    // using another if statementb to compare what the user selected with what the computer randomly selected
-
-    let result ='';
-    
-
-    if (computerMove === 'rock') {
-      result = 'Tie.';
-    } 
-    else if(computerMove === 'paper') {
-      result = 'You lose.'
-    }
-    else if (computerMove === 'scissors') {
-      result = 'You win'
-    }
-
-    // Below is an alert. It displays the output at the end of a game
-    alert(`You picked rock. computer picked ${computerMove}. ${result}`);
+         
    "
     >Rock
     </button>
 
     <button
     onclick="
-          const computerMove =  pickComputerMove();
-
-      
-
-        // using another if statements to compare what the user selected with what the computer randomly selected
-
-        let result ='';
-
-      
-
-        // Below is an alert. It displays the output at the end of a game
-        alert(`You picked paper. computer picked ${computerMove}. ${result}`);
+          playGame('paper')
       "
     >
       Paper
@@ -91,6 +60,16 @@
               else if (computerMove === 'scissors') {
                 result = 'You win'
               }
+        }  else if(playerMove === 'rock') {
+          if (computerMove === 'rock') {
+              result = 'Tie.';
+            } 
+            else if(computerMove === 'paper') {
+              result = 'You lose.'
+            }
+            else if (computerMove === 'scissors') {
+              result = 'You win'
+            }
         }
 
           // Below is an alert. It displays the output at the end of a game
