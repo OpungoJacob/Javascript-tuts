@@ -27,8 +27,20 @@
 
         */
        
-        function greet (name = 'Hi there!') {
-                console.log(`Hello ${name}!`);
+        // function greet (name = 'Hi there!') {
+        //         console.log(`Hello ${name}!`);
+        // }
+        // greet('Jacob');
+        // greet('Simon');
+        // greet();
+
+        //qn. 7c
+        function greet(name) {
+            if(!name){
+                console.log("Hi there!")
+            } else{
+                console.log(`Hello ${name}`)
+            }
         }
         greet('Jacob');
         greet('Simon');
